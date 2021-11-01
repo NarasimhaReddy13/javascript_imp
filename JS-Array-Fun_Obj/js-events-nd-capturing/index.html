@@ -1,0 +1,78 @@
+<!-- DOM -- every html tags Obj -- Nested tags are children -- text in tag is Object
+DOM is an API for valid html and well-formed xml docs. It's a logical str of docs and the way how docs are accessed and manipulated.
+Every tree node is an object (which open/collapse the children elements) -->
+
+<!-- Doc obj is an entry point of DOM. For accessing any html element , we should strt with accessing the doc obj first.
+ hltml - is not prog lang - nearly 150 tags - .html or .htm  -->
+
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <title> Fill the Form </title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+    <div>
+        <div class="main-container">
+            <h1> Hello HTML </h1> <br/>
+            <button onclick="sayHello()"> Click for Inline </button> <br/>
+            <button id="onEvent"> Click for Onclick </button> <br/>
+            <button id="addEvent"> Add Event Listener </button> <br/>
+            <p id="para"> Hello </p> <br/>
+
+            <input type="text"id="inputText"/>
+            <p id="inputPara"></p>
+        </div>
+
+        <div class="container">
+            <!-- html element -->
+            <h1 class="form-heading"> Add User </h1>
+            <form id="myForm">
+                <div>
+                    <label for="nameInput" class="name-label"> Name </label> <br/>
+                    <input type="text" class="input-style" id="nameInput" placeholder="Enter Your Full Name"/>
+                    <p id="nameErrMsg" class="error-msg"></p>
+                </div>
+                <!-- preventDefault(); -->
+                <!-- select is used to create a drop-down list with option element-->
+                <div class="select-container">
+                <label for="state" class="name-label"> Select Your State </label> <br/>
+                <select id='state', class="input-style">
+                    <option value="Andra Pradesh" class="label-style"> Andhra Pradesh </option> 
+                    <!-- value attribute (specifies the value of given input) -->
+                    <option value="Telangana" class="label-style" selected> Telangana </option>
+                </select> <br/>
+                <div class="select-container">
+                    <h1 class="gender-heading"> Select Gender </h1> <br/>
+                    <div class="gender-container">
+                    <div>
+                        <input type="radio" id="male" value="Male" name="gender"checked/>
+                        <label for="male" class="male-heading"> Male </label>
+                    </div>
+                    <div>
+                        <input type="radio" value="Female" id="female" name="gender"/>
+                        <label for="female" class="male-heading"> Female </label>
+                    </div>
+                    </div>
+                </div>
+            </form>
+            <button type="submit" class="submit-button"> Submit </button> <br/>
+        </div>
+    </div>
+    <div>
+        <h1> Bubling and Capturing </h1>
+        <div id="event1" class="div-elements">
+            <div id="event2" class="div-elements">
+                <div id="event3" class="div-elements"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <ul id='tasks'>
+            <li> Task 1 </li>
+            <li> Task 2 </li>
+        </ul>
+    </div>
+    <script src="./events-bubl-capturing.js" type="text/javascript" ></script>
+    </body>
+</html>

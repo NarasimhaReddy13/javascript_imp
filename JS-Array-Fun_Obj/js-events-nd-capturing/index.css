@@ -1,0 +1,86 @@
+.main-container {
+    font-family: "Roboto";
+    font-size: 20px;
+    text-align: center;
+}
+.container {
+    padding: 40px;
+}
+.form-heading {
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.input-style {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: "Roboto";
+    font-size: 18px;
+    margin-top: 7px;
+}
+.name-label {
+    font-family: "Roboto";
+    font-size: 20px;
+}
+.error-msg {
+    color: red;
+    font-family: "Roboto";
+    font-size: 17px;
+}
+.submit-button {
+    height: 45px;
+    width: 120px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.select-container {
+    margin-top: 15px;
+}
+.label-style {
+    width: 90%;
+    padding: 10px;
+    background-color: transparent;
+    font-family: "Roboto";
+}
+.select-style {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+.gender-heading {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+.gender-container {
+    display: flex;
+    align-items: center;
+}
+.male-heading {
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+
+
+.div-elements {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 30px;
+    border: 2px solid red;
+}
+
+.completed {
+    text-decoration: line-through;
+}
